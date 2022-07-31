@@ -29,7 +29,9 @@ const Main = () => {
                         <button className='border text-white border-gray-300 py-2 px-5 ml-4'>Watch</button>
                     </div>
                     <p className='text-gray-400 text-sm'>Released: {movie?.release_date}</p>
-                    <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] my-4'>{movie?.overview}</p>
+                    <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] my-4'>
+                        {truncateString(movie?.overview, 150)}
+                    </p>
                 </div>
             </div>
         </div>
