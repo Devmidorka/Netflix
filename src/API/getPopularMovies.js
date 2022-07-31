@@ -1,8 +1,8 @@
-import requests from "./Requests";
+import endpoints from "./endpoints";
 import axios from "axios";
 
 const getPopularMovies = () => {
-    return axios.get(requests.requestPopular)
+    return axios.get(endpoints.popularMovies)
 }
 
 export default getPopularMovies
