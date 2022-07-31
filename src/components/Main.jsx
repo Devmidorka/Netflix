@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import getPopularMovies from "../API/getPopularMovies";
+import truncateString from "../utils/truncateString";
 
 const Main = () => {
     const [movies, setMovies] = useState([])
