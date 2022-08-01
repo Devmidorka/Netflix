@@ -28,7 +28,7 @@ const Row = ({title = '', fetchDataFunction = () => {}}) => {
         <>
             <h2 className='text-white font-bold md:text-xl p-4'>{title}</h2>
             <div className='relative flex items-center group'>
-                <MdChevronLeft onClick={() => slideLeft(sliderRef.current)} className='bg-white rounded-full absolute  left-0 opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40}/>
+                <MdChevronLeft onClick={() => slideLeft(sliderRef.current)} className='bg-white rounded-full absolute  left-1 opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40}/>
                 <div ref={sliderRef} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'>
                     {movies.length > 0 ?
                         movies.map(movie => <Movie key={movie.id} movie={movie}/>)
@@ -36,7 +36,7 @@ const Row = ({title = '', fetchDataFunction = () => {}}) => {
                         null
                     }
                 </div>
-                <MdChevronRight onClick={() => slideRight(sliderRef.current)} className='bg-white rounded-full absolute right-0 opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40}/>
+                <MdChevronRight onClick={() => slideRight(sliderRef.current)} className='bg-white rounded-full absolute right-1 opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40}/>
             </div>
         </>
     );

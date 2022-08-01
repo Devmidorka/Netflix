@@ -16,7 +16,7 @@ const Movie = ({movie}) => {
                         alt={movie.title}
                     />
                     <div
-                        className="absolute top-0 left-0 w-full h-full opacity-0 text-white  hover:bg-black/80 hover:opacity-100"
+                        className="absolute top-0 left-0 w-full h-full opacity-0 text-white  hover:bg-black/80 hover:opacity-100 "
                     >
                         <p className='text-xs md:text-sm font-bold flex justify-center items-center h-full text-center whitespace-normal px-3'>
                             {movie?.title}
