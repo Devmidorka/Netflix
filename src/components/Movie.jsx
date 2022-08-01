@@ -12,7 +12,7 @@ const Movie = ({movie}) => {
             {movie?.backdrop_path &&
                 <>
                     <img
-                        src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`}
+                        src={`https://image.tmdb.org/t/p/w300${movie?.backdrop_path}`}
                         alt={movie.title}
                     />
                     <div
