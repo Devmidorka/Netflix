@@ -7,6 +7,7 @@ import getPopularMovies from "../API/getPopularMovies";
 import getHorrorMovies from "../API/getHorrorMovies";
 import getTrendingMovies from "../API/getTrendingMovies";
 
+
 const Home = () => {
     return (
         <>
